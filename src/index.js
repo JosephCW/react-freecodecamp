@@ -38,19 +38,7 @@ import reportWebVitals from './reportWebVitals';
     // c. An ordered or unordered list of the top 3 vacation spots you'd like to visit
 // 3. Render an instance of that functional component to the browser
 
-function MyInfo() {
-  return (
-    <div>
-      <h1>Joseph Watts</h1>
-      <p>I am a 23yo software engineer. I have some experience with express but never with React</p>
-      <ol>
-        <li>Steamboat Springs, CO</li>
-        <li>Telluride, CO</li>
-        <li>Vail, CO</li>
-      </ol>
-    </div>
-  )
-}
+import MyInfo from "./components/MyInfo"
 
 ReactDOM.render(
   <MyInfo />,
