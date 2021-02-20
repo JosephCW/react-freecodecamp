@@ -11,12 +11,19 @@ import reportWebVitals from './reportWebVitals';
 //   document.getElementById('root')
 // );
 
+// components in pascal case
+function MyApp() {
+  return (
+    <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+    </ul>
+  )
+}
+
 ReactDOM.render(
-  <ul>
-    <li>a</li>
-    <li>b</li>
-    <li>c</li>
-  </ul>,
+  <MyApp />,
   document.getElementById("root")
 );
 
