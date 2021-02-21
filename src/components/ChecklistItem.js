@@ -1,7 +1,6 @@
 import React from "react"
 
 function ChecklistItem() {
-    let time = Date.now()
 
     return (
         <div className="checklist-item">

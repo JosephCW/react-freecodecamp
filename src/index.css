@@ -17,7 +17,36 @@ body {
   padding-top: 10px;
 }
 
-.checklist {
+.joke-list {
+  background-color: white;
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  padding: 30px;
+}
+
+.joke {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+.question {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+/* .checklist {
   background-color: white;
   margin: auto;
   width: 50%;
@@ -47,4 +76,4 @@ input[type=checkbox] {
 
 input [type=checkbox]:focus {
   outline: 0;
-}
+} */
