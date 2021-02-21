@@ -1,11 +1,11 @@
 import React from "react"
 
-function ChecklistItem() {
+function ChecklistItem(props) {
 
     return (
         <div className="checklist-item">
-            <input type="checkbox"/>
-            <span>Checkbox Item</span>
+            <input type="checkbox" checked={props.item.completed}/>
+            <span>{props.item.text}</span>
         </div>
     )
     

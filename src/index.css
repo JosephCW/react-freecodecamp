@@ -17,7 +17,7 @@ body {
   padding-top: 10px;
 }
 
-.joke-list {
+/* .joke-list {
   background-color: white;
   margin: auto;
   width: 50%;
@@ -44,9 +44,9 @@ body {
 .question {
   font-weight: bold;
   padding-right: 10px;
-}
+} */
 
-/* .checklist {
+.checklist {
   background-color: white;
   margin: auto;
   width: 50%;
@@ -76,4 +76,4 @@ input[type=checkbox] {
 
 input [type=checkbox]:focus {
   outline: 0;
-} */
+}
