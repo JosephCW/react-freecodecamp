@@ -53,12 +53,27 @@ import reportWebVitals from './reportWebVitals';
   // 2. A MainContent component
   // 3. A Footer component
 
+// import App from "./components/App-old"
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById("root")
+// )
+
+
+// React Todo App
+// From scratch, initialize the React app
+// Render an <App /> component
+// Create the <App /> component from scratch
+// Have the <App /> component render 3 or 4 checkboxes with paragraphs or spans next to it
+// like you're making a todo list with some hard-coded items on it
 import App from "./components/App"
 
 ReactDOM.render(
   <App />,
   document.getElementById("root")
 )
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

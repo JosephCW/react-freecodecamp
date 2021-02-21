@@ -1,15 +1,14 @@
 import React from "react"
 
-import Navbar from "./Navbar"
-import MainContent from "./MainContent"
-import Footer from "./Footer"
+import ChecklistItem from "./ChecklistItem"
 
 function App() {
     return (
-        <div>
-            <Navbar />
-            <MainContent />
-            <Footer />
+        <div className="checklist">
+            <ChecklistItem />
+            <ChecklistItem />
+            <ChecklistItem />
+            <ChecklistItem />
         </div>
     )
 }
