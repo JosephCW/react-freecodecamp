@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // ReactDOM.render(
@@ -38,10 +38,25 @@ import reportWebVitals from './reportWebVitals';
     // c. An ordered or unordered list of the top 3 vacation spots you'd like to visit
 // 3. Render an instance of that functional component to the browser
 
-import MyInfo from "./components/MyInfo"
+// import MyInfo from "./components/MyInfo"
+
+// ReactDOM.render(
+//   <MyInfo />,
+//   document.getElementById("root")
+// )
+
+//React Parent/Child Component Practice
+// Set up the React app from scratch
+// Render an App component (defined in a separate file)
+// Inside App, render:
+  // 1. A Navbar component
+  // 2. A MainContent component
+  // 3. A Footer component
+
+import App from "./components/App"
 
 ReactDOM.render(
-  <MyInfo />,
+  <App />,
   document.getElementById("root")
 )
 
