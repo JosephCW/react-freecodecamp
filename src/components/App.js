@@ -52,10 +52,29 @@ class App extends React.Component {
         this.state = {
             items: checklistData
         }
+        // Binding needed to have this access from within handleCheckboxChanged
+        this.handleCheckboxChanged = this.handleCheckboxChanged.bind(this)
+    }
+
+    handleCheckboxChanged(id) {
+        console.log('Checkbox Changed')
+        this.setState((prevState) => {
+            const updatedItems = prevState.items.map(item => {
+                if (item.id == id) {
+                    item.completed = !item.completed
+                }
+
+                return item
+            })
+
+            return {
+                items: updatedItems
+            }
+        })
     }
 
     render() {
-        const checklistItems = this.state.items.map((item) => <ChecklistItem key={item.id} item={item} />)
+        const checklistItems = this.state.items.map((item) => <ChecklistItem key={item.id} item={item} onCheckboxChanged={this.handleCheckboxChanged}/>)
 
         return (
             <div className="checklist">

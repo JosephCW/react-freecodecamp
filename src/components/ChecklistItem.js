@@ -1,22 +1,19 @@
 import React from "react"
 
-function onCheckChanged() {
-    console.log('abc')
-}
-
 function ChecklistItem(props) {
+
+    console.log(props)
 
     return (
         <div className="checklist-item">
             <input 
                 type="checkbox" 
-                onChange={onCheckChanged} 
+                onChange={()=> props.onCheckboxChanged(props.item.id)} 
                 checked={props.item.completed}
             />
             <span>{props.item.text}</span>
         </div>
     )
-    
 }
 
 export default ChecklistItem
