@@ -81,6 +81,7 @@ class App extends React.Component {
 
         return (
             <div className="checklist">
+                <h2>Todo List</h2>
                 {checklistItems}
             </div>
         )

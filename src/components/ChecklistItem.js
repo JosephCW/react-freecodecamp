@@ -1,17 +1,20 @@
 import React from "react"
 
 function ChecklistItem(props) {
-
-    console.log(props)
+    const style = props.item.completed ? {
+        textDecoration: "line-through",
+        color: "#bcbcbc",
+        fonstStyle: "italic"
+    }: null
 
     return (
         <div className="checklist-item">
             <input 
-                type="checkbox" 
+                type="checkbox"
                 onChange={()=> props.onCheckboxChanged(props.item.id)} 
                 checked={props.item.completed}
             />
-            <span>{props.item.text}</span>
+            <span style={style}>{props.item.text}</span>
         </div>
     )
 }

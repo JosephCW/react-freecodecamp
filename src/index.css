@@ -46,6 +46,10 @@ body {
   padding-right: 10px;
 } */
 
+h2 {
+  color: #333333;
+}
+
 .checklist {
   background-color: white;
   margin: auto;
